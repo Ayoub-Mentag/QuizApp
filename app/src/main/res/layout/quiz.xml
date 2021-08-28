@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/rose"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Quel est la capital de "/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:text="Morocco"
+            android:textColor="@color/rose"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quizBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/ans1"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/rose"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/ans2"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/rose"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/ans3"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/rose"
+            android:textColor="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/ans4"
+            android:layout_width="271dp"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/rose"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionNumber"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/rose"
+            />
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rose"
+            android:layout_gravity="bottom"
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

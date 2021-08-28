@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayScore"
+    android:background="@color/rose">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/parentText"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Game over"
+          android:textColor="@color/blue"
+          android:textSize="40dp"
+          android:id="@+id/gameOver"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/scoreText"
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/gameOver"
+          android:textSize="30dp"
+          android:textColor="@color/blue"
+          android:layout_centerHorizontal="true"
+          android:text="Your score is"
+          />
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parentText"
+        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playAgain"
+            android:text="Play Again"
+            android:textSize="25dp"
+            android:textColor="@color/rose"
+            android:backgroundTint="@color/blue"
+        />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
